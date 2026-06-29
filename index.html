@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+  =====================================================================
+  COMO EDITAR ESTA PÁGINA — leia antes de publicar
+  =====================================================================
+  1) Número de WhatsApp: altere a constante WHATSAPP_NUMBER em
+     assets/js/main.js (use formato 55 + DDD + número, só dígitos).
+     Todos os botões de WhatsApp da página usam esse mesmo número.
+  2) Campos marcados com a classe "placeholder" (texto entre colchetes,
+     com sublinhado pontilhado) precisam ser preenchidos: CRC, anos de
+     experiência, cidade/estado, e-mail, foto profissional etc.
+  3) Procure por "FOTO PROFISSIONAL" para substituir os quadros de foto
+     pela imagem real (basta troca o <div class="photo-placeholder">
+     por uma tag <img>).
+  4) O rodapé já está com o @ do Instagram real informado no briefing.
+     Confirme se segue correto antes de publicar.
+  =====================================================================
+-->
+
+<title>Ana Beatriz Contabilidade Simplificada | Reforma Tributária, IR e Créditos Fiscais</title>
+<meta name="description" content="Contabilidade tributária especializada em reforma tributária, imposto de renda e recuperação de créditos fiscais. Atendimento claro, estratégico e personalizado.">
+<meta name="keywords" content="contabilidade tributária, especialista em tributação, reforma tributária, imposto de renda, recuperação de créditos fiscais, consultoria tributária, planejamento tributário, contadora especialista em tributação, contabilidade para empresas, orientação fiscal">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ana Beatriz Contabilidade Simplificada">
+<meta property="og:description" content="Especialista em tributação, reforma tributária, imposto de renda e recuperação de créditos fiscais para empresas e pessoas físicas.">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Dados estruturados (editar telefone/endereço antes de publicar) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Ana Beatriz Contabilidade Simplificada",
+  "description": "Consultoria contábil e tributária especializada em reforma tributária, imposto de renda e recuperação de créditos fiscais.",
+  "areaServed": "BR",
+  "sameAs": ["https://www.instagram.com/anabeatriz.contabilidade"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- =====================================================================
+     HEADER
+     ===================================================================== -->
+<header id="site-header">
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <span class="mark"><img src="assets/images/logo.png" alt="Ana Beatriz Contabilidade Simplificada"></span>
+      <span class="name">Ana Beatriz<small>Contabilidade Simplificada</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#solucoes">Serviços</a>
+      <a href="#reforma">Reforma Tributária</a>
+      <a href="#imposto-de-renda">Imposto de Renda</a>
+      <a href="#creditos-fiscais">Créditos Fiscais</a>
+      <a href="#faq">Perguntas frequentes</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contato" class="btn btn-ghost">Conhecer os serviços</a>
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Vim pelo site e gostaria de falar sobre minha situação tributária." class="btn btn-primary">
+        <svg class="whatsapp-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.9 7.9 0 0 0-2.327-5.607zM7.998 14.53h-.004a6.58 6.58 0 0 1-3.356-.92l-.24-.144-2.5.656.666-2.433-.156-.25a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.003 3.633-2.96 6.591-6.591 6.591zm3.616-4.932c-.198-.099-1.174-.58-1.356-.646-.182-.066-.314-.099-.445.099-.132.198-.511.646-.627.778-.116.132-.231.148-.429.05-.198-.1-.836-.308-1.592-.984-.588-.525-.985-1.173-1.101-1.371-.116-.198-.012-.305.087-.404.089-.089.198-.231.297-.347.099-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.049-.099-.445-1.074-.61-1.47-.16-.385-.323-.333-.445-.34l-.379-.007c-.132 0-.347.05-.528.248-.182.198-.693.677-.693 1.652s.71 1.916.809 2.048c.099.132 1.397 2.132 3.384 2.99.473.204.842.326 1.129.418.474.151.905.13 1.246.079.38-.057 1.174-.48 1.339-.943.165-.462.165-.858.116-.943-.05-.083-.182-.132-.38-.231z"></path></svg>
+        WhatsApp
+      </a>
+    </div>
+    <button class="burger" id="mobile-menu-open" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobile-menu" aria-label="Navegação móvel" aria-hidden="true">
+  <button class="close" id="mobile-menu-close" type="button" aria-label="Fechar menu">
+    Fechar
+    <svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+  </button>
+  <a href="#solucoes">Serviços</a>
+  <a href="#reforma">Reforma Tributária</a>
+  <a href="#imposto-de-renda">Imposto de Renda</a>
+  <a href="#creditos-fiscais">Créditos Fiscais</a>
+  <a href="#faq">Perguntas frequentes</a>
+  <a href="#" data-wa-msg="Olá Ana Beatriz! Vim pelo site e gostaria de falar sobre minha situação tributária." class="btn btn-primary">Falar no WhatsApp</a>
+</nav>
+
+<main>
+<!-- =====================================================================
+     HERO
+     ===================================================================== -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="reveal in">
+      <p class="eyebrow">Contabilidade · Tributação · Estratégia</p>
+      <h1>Pague impostos com <em>segurança</em>, estratégia e clareza.</h1>
+      <p class="lede">Especialista em tributação, reforma tributária, imposto de renda e recuperação de créditos fiscais para pessoas físicas e jurídicas.</p>
+      <div class="cta-row">
+        <a href="#" data-wa-msg="Olá Ana Beatriz! Quero falar sobre minha situação tributária." class="btn btn-primary">
+          <svg class="whatsapp-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.9 7.9 0 0 0-2.327-5.607zM7.998 14.53h-.004a6.58 6.58 0 0 1-3.356-.92l-.24-.144-2.5.656.666-2.433-.156-.25a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.003 3.633-2.96 6.591-6.591 6.591zm3.616-4.932c-.198-.099-1.174-.58-1.356-.646-.182-.066-.314-.099-.445.099-.132.198-.511.646-.627.778-.116.132-.231.148-.429.05-.198-.1-.836-.308-1.592-.984-.588-.525-.985-1.173-1.101-1.371-.116-.198-.012-.305.087-.404.089-.089.198-.231.297-.347.099-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.049-.099-.445-1.074-.61-1.47-.16-.385-.323-.333-.445-.34l-.379-.007c-.132 0-.347.05-.528.248-.182.198-.693.677-.693 1.652s.71 1.916.809 2.048c.099.132 1.397 2.132 3.384 2.99.473.204.842.326 1.129.418.474.151.905.13 1.246.079.38-.057 1.174-.48 1.339-.943.165-.462.165-.858.116-.943-.05-.083-.182-.132-.38-.231z"></path></svg>
+          Falar com a Ana Beatriz no WhatsApp
+        </a>
+        <a href="#solucoes" class="btn btn-ghost">Conhecer os serviços</a>
+      </div>
+      <div class="hero-trust">
+        <span><i class="dot"></i>Atendimento humanizado</span>
+        <span><i class="dot"></i>Linguagem simples, sem juridiquês</span>
+        <span><i class="dot"></i>Análise técnica e individual</span>
+      </div>
+    </div>
+    <div class="hero-photo reveal in">
+      <div class="photo-frame">
+        <img src="assets/images/foto_generica.jpeg" alt="Ana Beatriz" width="640" height="641" fetchpriority="high" decoding="async">
+      </div>
+      <div class="seal">
+        <span class="ab logo-mark"><img src="assets/images/logo.png" alt="Ana Beatriz Contabilidade Simplificada"></span>
+        <span class="tag">Tributação</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     AUTORIDADE
+     ===================================================================== -->
+<section class="authority" id="sobre">
+  <div class="container authority-grid">
+    <div class="authority-photo reveal">
+      <div class="photo-frame">
+        <img src="assets/images/Ana.jpeg" alt="Ana Beatriz" width="1080" height="1062" loading="lazy" decoding="async">
+      </div>
+      <div class="authority-credentials">
+        <ul>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 4-8 4-8-4 8-4z"></path><path d="M6 11v5c2 1.6 10 1.6 12 0v-5"></path></svg>Mestre pela UFPE</li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"></path><path d="M14 3v5h5"></path></svg>Pós-graduada em Planejamento Tributário (UFPE)</li>
+          <li><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9 12l2 2 4-4"></path></svg>Coordenadora do CRC Jovem</li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">A profissional por trás da marca</p>
+      <h2>Contabilidade tributária com nome, rosto e responsabilidade técnica.</h2>
+      <p>À frente da Ana Beatriz Contabilidade Simplificada, Ana Beatriz atua ajudando clientes a entenderem melhor suas obrigações fiscais, evitarem riscos e identificarem oportunidades tributárias dentro da legalidade.</p>
+      <p>O trabalho é conduzido com base técnica e proximidade: cada cliente entende o que está sendo feito, por quê, e quais caminhos fazem sentido para a sua realidade — seja uma empresa, um profissional autônomo ou uma pessoa física organizando seu imposto de renda.</p>
+      <div class="authority-meta">
+        <div><label>CRC</label><span class="placeholder">CRC/PE nº 032391/O</span></div>
+        <div><label>Experiência</label><span class="placeholder">8 anos de experiência</span></div>
+        <div><label>Atuação</label><span class="placeholder">Em todo território nacional</span></div>
+        <div><label>Especializações</label><span class="placeholder">Pós-graduada em planejamento tributário pela UFPE<br>Mestre em Contabilidade para usuários externos pela UFPE<br>Coordenadora da Comissão Jovem do estado de Pernambuco por 5 anos<br>Membro da comissão da mulher do CRC PE</span></div>        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     PROBLEMAS
+     ===================================================================== -->
+<section class="problems" id="problemas">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow center on-dark">As dores que chegam todo dia</p>
+      <h2>Você sente insegurança quando o assunto é imposto?</h2>
+      <p>Muitos problemas fiscais não começam por falta de vontade, mas por falta de orientação clara. A contabilidade precisa ser uma ferramenta de decisão, não apenas uma obrigação.</p>
+    </div>
+
+    <div class="problems-grid reveal">
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5"></path><path d="M12 16.2v.1"></path></svg>
+        <p>Medo de pagar imposto errado</p>
+      </div>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12a1 1 0 0 1 1 1v15.5a.5.5 0 0 1-.7.45L12 18l-6.3 1.95A.5.5 0 0 1 5 19.5V5z"></path></svg>
+        <p>Dúvidas com o imposto de renda</p>
+      </div>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg>
+        <p>Falta de clareza sobre a reforma tributária</p>
+      </div>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"></path><path d="M15 7h5v5"></path></svg>
+        <p>Não saber se a empresa tem créditos fiscais a recuperar</p>
+      </div>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 4.5v6L12 18l-8-4.5v-6L12 3z"></path><path d="M12 12v6"></path></svg>
+        <p>Risco de multas por erros fiscais</p>
+      </div>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M8 9h8M8 13h8M8 17h5"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+        <p>Dificuldade em entender a linguagem contábil</p>
+      </div>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg>
+        <p>Falta de planejamento tributário</p>
+      </div>
+      <div class="problem-card">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+        <p>Desorganização de documentos fiscais</p>
+      </div>
+    </div>
+
+    <div class="problems-note reveal">
+      <span class="quote-mark">“</span>
+      <p>Muitos problemas fiscais não começam por falta de vontade, mas por falta de orientação clara.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SOLUÇÕES
+     ===================================================================== -->
+<section class="solutions" id="solucoes">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow center">Serviços</p>
+      <h2>Soluções contábeis e tributárias para decisões mais seguras</h2>
+    </div>
+    <div class="cards-grid reveal">
+      <div class="card">
+        <span class="num">01</span>
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9 12l2 2 4-4"></path></svg></div>
+        <h3>Consultoria Tributária</h3>
+        <p>Orientação especializada para entender sua situação fiscal, reduzir riscos e tomar decisões mais seguras.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M3 17l5-9 4 6 3-4 6 7"></path></svg></div>
+        <h3>Planejamento Tributário</h3>
+        <p>Análise estratégica para identificar o regime e os caminhos tributários mais adequados para sua realidade.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg></div>
+        <h3>Reforma Tributária</h3>
+        <p>Acompanhamento e orientação sobre os impactos da reforma tributária na rotina, nos custos e nas decisões da sua empresa.</p>
+      </div>
+      <div class="card">
+        <span class="num">04</span>
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12a1 1 0 0 1 1 1v15.5a.5.5 0 0 1-.7.45L12 18l-6.3 1.95A.5.5 0 0 1 5 19.5V5z"></path></svg></div>
+        <h3>Imposto de Renda</h3>
+        <p>Suporte para declaração, organização de informações e prevenção de erros no imposto de renda.</p>
+      </div>
+      <div class="card">
+        <span class="num">05</span>
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"></path><path d="M15 7h5v5"></path></svg></div>
+        <h3>Recuperação de Créditos Fiscais</h3>
+        <p>Análise técnica para verificar possíveis pagamentos indevidos ou oportunidades legais de recuperação de créditos.</p>
+      </div>
+      <div class="card">
+        <span class="num">06</span>
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 9h8M8 13h5"></path></svg></div>
+        <h3>Regularização e Orientação Fiscal</h3>
+        <p>Apoio para organizar pendências, documentos e obrigações fiscais com mais segurança.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     POR QUE ESCOLHER
+     ===================================================================== -->
+<section class="why" id="diferenciais">
+  <div class="container why-grid">
+    <div class="reveal">
+      <p class="eyebrow">Por que escolher a Ana Beatriz</p>
+      <h2>Contabilidade com clareza, estratégia e proximidade</h2>
+      <p class="lede">A proposta é transformar temas contábeis e tributários complexos em orientações claras, permitindo que cada cliente tome decisões com mais tranquilidade e segurança.</p>
+      <div class="why-list">
+        <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"></circle><path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6"></path></svg><span>Atendimento humanizado</span></div>
+        <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><path d="M8 9h8M8 13h5"></path><circle cx="12" cy="12" r="9"></circle></svg><span>Linguagem simples</span></div>
+        <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><path d="M3 17l5-9 4 6 3-4 6 7"></path></svg><span>Visão estratégica</span></div>
+        <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 4.5v6L12 18l-8-4.5v-6L12 3z"></path></svg><span>Segurança técnica</span></div>
+        <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9 12l2 2 4-4"></path></svg><span>Foco em economia legal</span></div>
+        <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M16 16l4 4"></path></svg><span>Análise personalizada</span></div>
+        <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"></path></svg><span>Acompanhamento próximo</span></div>
+        <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12a1 1 0 0 1 1 1v15.5a.5.5 0 0 1-.7.45L12 18l-6.3 1.95A.5.5 0 0 1 5 19.5V5z"></path></svg><span>Orientação prática, do início ao fim</span></div>
+      </div>
+    </div>
+    <div class="why-aside reveal">
+      <span class="seal on-dark"><span class="ab logo-mark"><img src="assets/images/logo.png" alt="Ana Beatriz Contabilidade Simplificada"></span><span class="tag">Tributação</span></span>
+      <p class="why-quote">"Você não precisa entender tudo de tributação. Precisa de alguém certo para te orientar."</p>
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Quero entender melhor minha situação fiscal." class="btn btn-on-dark btn-block">Falar com a Ana Beatriz</a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     REFORMA TRIBUTÁRIA
+     ===================================================================== -->
+<section class="topic" id="reforma">
+  <div class="container topic-grid">
+    <div class="reveal">
+      <p class="eyebrow">Reforma Tributária</p>
+      <h2>Sua empresa está preparada para a Reforma Tributária?</h2>
+      <p class="lede">A reforma tributária vai mudar a forma como empresas lidam com impostos, preços, créditos e obrigações fiscais. Ter uma orientação especializada desde agora é essencial para reduzir riscos, entender impactos e se adaptar com segurança.</p>
+      <ul class="topic-points">
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Impacto nos custos</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Impacto na formação de preços</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Mudanças na apuração de tributos</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Atenção aos créditos fiscais</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Necessidade de adaptação gradual</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Importância de planejamento</li>
+      </ul>
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Quero entender o impacto da reforma tributária no meu negócio." class="btn btn-primary">Falar com a Ana Beatriz no WhatsApp</a>
+    </div>
+    <div class="topic-panel reveal">
+      <p class="eyebrow on-dark">Quero entender o impacto da reforma no meu negócio</p>
+      <h3>Transição acompanhada, sem sustos</h3>
+      <p>Cada empresa sente a reforma de um jeito diferente. O primeiro passo é entender, com clareza, o que muda especificamente para o seu negócio — e quais ajustes fazem sentido a partir de agora.</p>
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Quero entender o impacto da reforma tributária no meu negócio." class="btn btn-on-dark btn-block">Falar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     RECUPERAÇÃO DE CRÉDITOS FISCAIS
+     ===================================================================== -->
+<section class="topic topic-credits" id="creditos-fiscais">
+  <div class="container topic-grid">
+    <div class="topic-panel topic-panel-secondary reveal">
+      <p class="eyebrow">Solicitar análise tributária</p>
+      <h3>Antes de qualquer conclusão, uma análise individual</h3>
+      <p class="disclaimer">A recuperação de créditos fiscais exige cuidado técnico, análise documental e responsabilidade. Por isso, cada caso deve ser avaliado individualmente antes de qualquer conclusão.</p>
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Quero solicitar uma análise sobre recuperação de créditos fiscais." class="btn btn-primary btn-block">Falar pelo WhatsApp</a>
+    </div>
+    <div class="topic-content-primary reveal">
+      <p class="eyebrow">Recuperação de Créditos Fiscais</p>
+      <h2>Sua empresa pode estar deixando dinheiro para trás.</h2>
+      <p class="lede">Por meio de uma análise técnica, é possível verificar a possibilidade de pagamento indevido ou maior de tributos e identificar oportunidades legais de recuperação de créditos fiscais, quando aplicável e dentro da legislação.</p>
+      <ul class="topic-points">
+        <li><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M16 16l4 4"></path></svg>Análise técnica e documental</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 4.5v6L12 18l-8-4.5v-6L12 3z"></path></svg>Identificação de oportunidades legais</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12a1 1 0 0 1 1 1v15.5a.5.5 0 0 1-.7.45L12 18l-6.3 1.95A.5.5 0 0 1 5 19.5V5z"></path></svg>Avaliação individual, sem promessa de resultado garantido</li>
+      </ul>
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Quero solicitar uma análise sobre recuperação de créditos fiscais." class="btn btn-primary">Solicitar análise tributária</a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     IMPOSTO DE RENDA
+     ===================================================================== -->
+<section class="topic" id="imposto-de-renda">
+  <div class="container topic-grid">
+    <div class="reveal">
+      <p class="eyebrow">Imposto de Renda</p>
+      <h2>Imposto de Renda com mais segurança e menos dor de cabeça</h2>
+      <p class="lede">A declaração do imposto de renda exige atenção, organização e conhecimento das regras. Um preenchimento incorreto pode gerar pendências, inconsistências ou até problemas futuros com a Receita Federal.</p>
+      <ul class="topic-points">
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Organização das informações</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Redução de erros</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Análise individual do perfil do contribuinte</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Orientação sobre documentos necessários</li>
+        <li><svg class="icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg><span>Suporte para pessoa física <span class="topic-support-detail">e, quando fizer sentido, pessoa jurídica</span></span></li>
+      </ul>
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Quero ajuda com meu Imposto de Renda." class="btn btn-primary">Quero ajuda com meu Imposto de Renda</a>
+    </div>
+    <div class="topic-panel reveal">
+      <p class="eyebrow">Pessoa física e jurídica</p>
+      <h3>Declarar com tranquilidade</h3>
+      <p>Você envia as informações, recebe orientação clara sobre o que falta e o que pode ser ajustado — sem termos técnicos desnecessários e com tempo para tirar suas dúvidas.</p>
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Quero ajuda com meu Imposto de Renda." class="btn btn-on-dark btn-block btn-navy">Falar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     PROCESSO
+     ===================================================================== -->
+<section class="process" id="processo">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow center">Como funciona</p>
+      <h2>Como funciona o atendimento</h2>
+      <p>Um processo simples, do primeiro contato à orientação final.</p>
+    </div>
+    <div class="process-track reveal">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Primeiro contato</h3>
+        <p>O cliente entra em contato pelo WhatsApp e explica sua necessidade.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Diagnóstico inicial</h3>
+        <p>São levantadas as principais informações para entender o cenário fiscal, contábil ou tributário.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Análise técnica</h3>
+        <p>A situação é analisada com cuidado, considerando documentos, obrigações, riscos e oportunidades.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Orientação estratégica</h3>
+        <p>O cliente recebe uma explicação clara sobre os caminhos possíveis e os próximos passos recomendados.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <h3>Acompanhamento</h3>
+        <p>Quando necessário, a Ana Beatriz acompanha a execução das ações e orienta o cliente ao longo do processo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     EXPECTATIVA DE ATENDIMENTO
+     ===================================================================== -->
+<section class="expect" id="atendimento">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow center">O que esperar</p>
+      <h2>O que você pode esperar do atendimento</h2>
+      <p>Um atendimento contábil e tributário pensado para quem busca clareza, segurança e orientação estratégica antes de tomar decisões.</p>
+    </div>
+    <div class="cards-grid reveal">
+      <div class="card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M8 9h8M8 13h5"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+        <h3>Clareza para decidir</h3>
+        <p>Explicações simples sobre temas tributários complexos, para que você entenda sua situação e saiba quais caminhos fazem mais sentido.</p>
+      </div>
+      <div class="card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 4.5v6L12 18l-8-4.5v-6L12 3z"></path></svg></div>
+        <h3>Segurança técnica</h3>
+        <p>Análise cuidadosa das informações fiscais e contábeis, com foco em reduzir riscos, evitar erros e seguir a legislação corretamente.</p>
+      </div>
+      <div class="card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"></circle><path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6"></path></svg></div>
+        <h3>Atendimento próximo</h3>
+        <p>Um contato mais humano, direto e acessível, sem linguagem complicada e com orientação voltada para a realidade de cada cliente.</p>
+      </div>
+      <div class="card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M3 17l5-9 4 6 3-4 6 7"></path></svg></div>
+        <h3>Estratégia tributária</h3>
+        <p>Apoio para identificar riscos, oportunidades e possibilidades legais relacionadas a impostos, créditos fiscais e planejamento tributário.</p>
+      </div>
+      <div class="card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 9h8M8 13h5"></path></svg></div>
+        <h3>Organização fiscal</h3>
+        <p>Orientação para manter documentos, obrigações e informações contábeis mais organizadas, facilitando decisões e evitando problemas futuros.</p>
+      </div>
+      <div class="card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9 12l2 2 4-4"></path></svg></div>
+        <h3>Foco em solução</h3>
+        <p>Cada caso é analisado de forma individual, buscando respostas práticas para empresas, autônomos e pessoas físicas.</p>
+      </div>
+    </div>
+    <div class="expect-note reveal">
+      <p>"Você não precisa entender todos os detalhes da legislação tributária. Precisa contar com uma profissional que traduza esses temas com clareza e ajude você a agir com mais segurança."</p>
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Quero entender melhor minha situação fiscal." class="btn btn-primary">Falar com a Ana Beatriz no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     FAQ
+     ===================================================================== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow center">Perguntas frequentes</p>
+      <h2>Tire suas dúvidas antes de falar com a Ana Beatriz</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item" open>
+        <summary>Quem pode contratar a consultoria tributária?<span class="plus"></span></summary>
+        <div class="answer">Empresas, autônomos, prestadores de serviço e pessoas físicas que precisam de orientação sobre impostos, regularização, planejamento ou obrigações fiscais.</div>
+      </details>
+      <details class="faq-item">
+        <summary>A recuperação de créditos fiscais é garantida?<span class="plus"></span></summary>
+        <div class="answer">Não. A recuperação depende de análise técnica, documentos e enquadramento legal. Primeiro é feita uma avaliação para verificar se existe possibilidade real e segura.</div>
+      </details>
+      <details class="faq-item">
+        <summary>A reforma tributária já impacta minha empresa?<span class="plus"></span></summary>
+        <div class="answer">Mesmo que alguns efeitos sejam graduais, é importante entender desde agora como as mudanças podem afetar custos, preços, créditos e obrigações fiscais.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Você atende pessoa física para imposto de renda?<span class="plus"></span></summary>
+        <div class="answer">Sim. O atendimento pode ajudar na organização das informações, preenchimento da declaração e prevenção de inconsistências.</div>
+      </details>
+      <details class="faq-item">
+        <summary>O atendimento é online?<span class="plus"></span></summary>
+        <div class="answer">Sim. O atendimento pode ser realizado de forma online, com comunicação direta e envio de documentos de maneira prática.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Como funciona o primeiro contato?<span class="plus"></span></summary>
+        <div class="answer">O primeiro contato acontece pelo WhatsApp. A partir dele, são entendidas as necessidades do cliente e indicado o melhor caminho de atendimento.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CTA FINAL
+     ===================================================================== -->
+<section class="final-cta" id="contato">
+  <div class="container reveal">
+    <span class="seal on-dark"><span class="ab logo-mark"><img src="assets/images/logo.png" alt="Ana Beatriz Contabilidade Simplificada"></span><span class="tag">Tributação</span></span>
+    <h2>Tenha mais segurança nas suas decisões contábeis e tributárias.</h2>
+    <p>Fale com a Ana Beatriz e entenda como uma orientação especializada pode ajudar você ou sua empresa a lidar melhor com impostos, obrigações fiscais e oportunidades tributárias.</p>
+    <div class="cta-row">
+      <a href="#" data-wa-msg="Olá Ana Beatriz! Quero solicitar atendimento contábil e tributário." class="btn btn-primary">
+        <svg class="whatsapp-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.9 7.9 0 0 0-2.327-5.607zM7.998 14.53h-.004a6.58 6.58 0 0 1-3.356-.92l-.24-.144-2.5.656.666-2.433-.156-.25a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.003 3.633-2.96 6.591-6.591 6.591zm3.616-4.932c-.198-.099-1.174-.58-1.356-.646-.182-.066-.314-.099-.445.099-.132.198-.511.646-.627.778-.116.132-.231.148-.429.05-.198-.1-.836-.308-1.592-.984-.588-.525-.985-1.173-1.101-1.371-.116-.198-.012-.305.087-.404.089-.089.198-.231.297-.347.099-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.049-.099-.445-1.074-.61-1.47-.16-.385-.323-.333-.445-.34l-.379-.007c-.132 0-.347.05-.528.248-.182.198-.693.677-.693 1.652s.71 1.916.809 2.048c.099.132 1.397 2.132 3.384 2.99.473.204.842.326 1.129.418.474.151.905.13 1.246.079.38-.057 1.174-.48 1.339-.943.165-.462.165-.858.116-.943-.05-.083-.182-.132-.38-.231z"></path></svg>
+        Solicitar atendimento pelo WhatsApp
+      </a>
+      <a href="https://www.instagram.com/anabeatriz.contabilidade" target="_blank" rel="noopener" class="btn btn-on-dark">Ver Instagram</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- =====================================================================
+     RODAPÉ
+     ===================================================================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="brand">
+          <span class="mark"><img src="assets/images/logo.png" alt="Ana Beatriz Contabilidade Simplificada"></span>
+          <span class="name">Ana Beatriz<small>Contabilidade Simplificada</small></span>
+        </a>
+        <p class="about">Contabilidade tributária especializada, com foco em clareza, segurança e estratégia para empresas e pessoas físicas.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#" data-wa-msg="Olá Ana Beatriz! Vim pelo site.">WhatsApp</a></li>
+          <li><a href="mailto:anacontabilidadesimplificada@gmail.com">E-mail</a></li>
+          <li><a href="https://www.instagram.com/anabeatriz.contabilidade" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Localização</h4>
+        <ul>
+          <li><span>Recife/PE</span></li>
+          <li>Atendimento online para todo o Brasil</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><span class="placeholder">CRC/PE nº 032391/O</span></li>
+          <li><a href="#politica-privacidade">Política de privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Ana Beatriz Contabilidade Simplificada. Todos os direitos reservados.</span>
+      <span>Feito para gerar confiança, clareza e conversas reais.</span>
+    </div>
+    <p class="footer-disclaimer" id="politica-privacidade">As informações deste site têm caráter exclusivamente informativo e não substituem uma análise contábil individualizada. Os dados fornecidos voluntariamente por WhatsApp ou e-mail serão utilizados para responder solicitações, prestar os serviços contratados e cumprir obrigações legais. O titular poderá solicitar acesso, correção ou eliminação de seus dados pelo e-mail anacontabilidadesimplificada@gmail.com. Ao acessar links externos, aplicam-se também as políticas de privacidade das respectivas plataformas.</p>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a href="#" id="wa-float" data-wa-msg="Olá Ana Beatriz! Vim pelo site e gostaria de mais informações." class="wa-float" aria-label="Falar no WhatsApp">
+  <svg class="whatsapp-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.9 7.9 0 0 0-2.327-5.607zM7.998 14.53h-.004a6.58 6.58 0 0 1-3.356-.92l-.24-.144-2.5.656.666-2.433-.156-.25a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.003 3.633-2.96 6.591-6.591 6.591zm3.616-4.932c-.198-.099-1.174-.58-1.356-.646-.182-.066-.314-.099-.445.099-.132.198-.511.646-.627.778-.116.132-.231.148-.429.05-.198-.1-.836-.308-1.592-.984-.588-.525-.985-1.173-1.101-1.371-.116-.198-.012-.305.087-.404.089-.089.198-.231.297-.347.099-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.049-.099-.445-1.074-.61-1.47-.16-.385-.323-.333-.445-.34l-.379-.007c-.132 0-.347.05-.528.248-.182.198-.693.677-.693 1.652s.71 1.916.809 2.048c.099.132 1.397 2.132 3.384 2.99.473.204.842.326 1.129.418.474.151.905.13 1.246.079.38-.057 1.174-.48 1.339-.943.165-.462.165-.858.116-.943-.05-.083-.182-.132-.38-.231z"></path></svg>
+  <span class="wa-label">Falar no WhatsApp</span>
+</a>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
